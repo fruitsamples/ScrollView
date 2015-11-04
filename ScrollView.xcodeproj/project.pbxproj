@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 42;
+	objectVersion = 43;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F67B7D309EF065F009BB3D8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F67B7D209EF065F009BB3D8 /* Info.plist */; };
 		DDC84D1E04D07E760026D834 /* TCarbonEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = F7D75DEA00B712E903CA0DE6 /* TCarbonEvent.h */; };
 		DDC84D1F04D07E760026D834 /* TView.h in Headers */ = {isa = PBXBuildFile; fileRef = F73D216901EB71DB03CA0DE6 /* TView.h */; };
 		DDC84D2004D07E760026D834 /* TScrollableView.h in Headers */ = {isa = PBXBuildFile; fileRef = F737BBAD0236CA5F03CA0DE6 /* TScrollableView.h */; };
@@ -35,6 +36,7 @@
 		00DCF614FEEB2FDB11CA0DE6 /* TScrollWindow.cp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = TScrollWindow.cp; sourceTree = "<group>"; };
 		1870340FFE93FCAF11CA0CD7 /* main.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = main.nib; sourceTree = "<group>"; };
 		20286C33FDCF999611CA2CEA /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		4F67B7D209EF065F009BB3D8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DD5C051B04D04D660039A7F4 /* main.cp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = main.cp; sourceTree = "<group>"; };
 		DDC84D3704D07E760026D834 /* ScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F72B430002864A310377ACD7 /* TImageWindow.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = TImageWindow.h; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				20286C2CFDCF999611CA2CEA /* Resources */,
 				20286C32FDCF999611CA2CEA /* External Frameworks and Libraries */,
 				195DF8CFFE9D517E11CA2CBB /* Products */,
+				4F67B7D209EF065F009BB3D8 /* Info.plist */,
 			);
 			name = CarbonApp;
 			sourceTree = "<group>";
@@ -152,7 +155,7 @@
 /* Begin PBXNativeTarget section */
 		DDC84D1C04D07E760026D834 /* ScrollView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BE651BAE0C3472CC00EC1FC8 /* Build configuration list for PBXNativeTarget "ScrollView" */;
+			buildConfigurationList = 4F2B061108A02B5E0055E173 /* Build configuration list for PBXNativeTarget "ScrollView" */;
 			buildPhases = (
 				DDC84D1D04D07E760026D834 /* Headers */,
 				DDC84D2504D07E760026D834 /* Resources */,
@@ -175,10 +178,12 @@
 /* Begin PBXProject section */
 		20286C28FDCF999611CA2CEA /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = BE651BB20C3472CC00EC1FC8 /* Build configuration list for PBXProject "ScrollView" */;
+			buildConfigurationList = 4F2B061508A02B5E0055E173 /* Build configuration list for PBXProject "ScrollView" */;
+			compatibilityVersion = "Xcode 3.0";
 			hasScannedForEncodings = 1;
 			mainGroup = 20286C29FDCF999611CA2CEA /* CarbonApp */;
 			projectDirPath = "";
+			projectRoot = "";
 			targets = (
 				DDC84D1C04D07E760026D834 /* ScrollView */,
 			);
@@ -194,6 +199,7 @@
 				DDC84D2704D07E760026D834 /* Car.jpg in Resources */,
 				DDC84D2804D07E760026D834 /* ScrollView.icns in Resources */,
 				DDC84D2904D07E760026D834 /* logo.png in Resources */,
+				4F67B7D309EF065F009BB3D8 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,133 +233,90 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		BE651BAF0C3472CC00EC1FC8 /* Development */ = {
+		4F2B061208A02B5E0055E173 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ScrollViewPrefix.h;
-				GCC_USE_GCC3_PFE_SUPPORT = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
-				GCC_WARN_UNKNOWN_PRAGMAS = NO;
 				HEADER_SEARCH_PATHS = "\"$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Libraries/CIncludes\"";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_DEVELOPER_DIR)/Demos";
-				LIBRARY_SEARCH_PATHS = "";
-				OPTIMIZATION_CFLAGS = "-O0";
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ScrollView;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = "-Wmost";
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = YES;
 			};
-			name = Development;
+			name = Debug;
 		};
-		BE651BB00C3472CC00EC1FC8 /* Deployment */ = {
+		4F2B061308A02B5E0055E173 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COPY_PHASE_STRIP = YES;
-				DEPLOYMENT_LOCATION = YES;
-				DEPLOYMENT_POSTPROCESSING = YES;
-				FRAMEWORK_SEARCH_PATHS = "";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ScrollViewPrefix.h;
-				GCC_USE_GCC3_PFE_SUPPORT = YES;
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
-				GCC_WARN_UNKNOWN_PRAGMAS = NO;
 				HEADER_SEARCH_PATHS = "\"$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Libraries/CIncludes\"";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_DEVELOPER_DIR)/Demos";
-				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ScrollView;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = "-Wmost";
-				WRAPPER_EXTENSION = app;
-				ZERO_LINK = NO;
-			};
-			name = Deployment;
-		};
-		BE651BB10C3472CC00EC1FC8 /* Default */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = ScrollViewPrefix.h;
-				GCC_USE_GCC3_PFE_SUPPORT = YES;
-				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
-				GCC_WARN_UNKNOWN_PRAGMAS = NO;
-				HEADER_SEARCH_PATHS = "\"$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Libraries/CIncludes\"";
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(LOCAL_DEVELOPER_DIR)/Demos";
-				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ScrollView;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = "-Wmost";
 				WRAPPER_EXTENSION = app;
 			};
-			name = Default;
+			name = Release;
 		};
-		BE651BB30C3472CC00EC1FC8 /* Development */ = {
+		4F2B061608A02B5E0055E173 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PREBINDING = NO;
+				SDKROOTS = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
 			};
-			name = Development;
+			name = Debug;
 		};
-		BE651BB40C3472CC00EC1FC8 /* Deployment */ = {
+		4F2B061708A02B5E0055E173 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PREBINDING = NO;
+				SDKROOTS = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
 			};
-			name = Deployment;
-		};
-		BE651BB50C3472CC00EC1FC8 /* Default */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
-			};
-			name = Default;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BE651BAE0C3472CC00EC1FC8 /* Build configuration list for PBXNativeTarget "ScrollView" */ = {
+		4F2B061108A02B5E0055E173 /* Build configuration list for PBXNativeTarget "ScrollView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BE651BAF0C3472CC00EC1FC8 /* Development */,
-				BE651BB00C3472CC00EC1FC8 /* Deployment */,
-				BE651BB10C3472CC00EC1FC8 /* Default */,
+				4F2B061208A02B5E0055E173 /* Debug */,
+				4F2B061308A02B5E0055E173 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Default;
+			defaultConfigurationName = Release;
 		};
-		BE651BB20C3472CC00EC1FC8 /* Build configuration list for PBXProject "ScrollView" */ = {
+		4F2B061508A02B5E0055E173 /* Build configuration list for PBXProject "ScrollView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BE651BB30C3472CC00EC1FC8 /* Development */,
-				BE651BB40C3472CC00EC1FC8 /* Deployment */,
-				BE651BB50C3472CC00EC1FC8 /* Default */,
+				4F2B061608A02B5E0055E173 /* Debug */,
+				4F2B061708A02B5E0055E173 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Default;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
